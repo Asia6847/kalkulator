@@ -28,16 +28,20 @@ public class Main {
 //        }
         switch (operator) {
             case "+":
-                result = a + b;
+                Sumator sumator = new Sumator();
+                result = sumator.oblicz(a, b);
                 break;
             case "-":
-                result = a - b;
+                Odejmator odejmator = new Odejmator();
+                result = odejmator.oblicz(a, b);
                 break;
             case "/":
-                result = a/b;
+                Dzielnikator dzielnikator = new Dzielnikator();
+                result = dzielnikator.oblicz(a, b);
                 break;
             case "*":
-                result = a*b;
+                Mnożnik mnożnik = new Mnożnik();
+                result = mnożnik.oblicz(a, b);
         }
 
         System.out.print("Wynik to " + result);
