@@ -13,11 +13,6 @@ public class Main {
         int c= a + b;
         System.out.print("Wynik to " + c);
 
-
-
-
-
-
-
+        System.out.print("AAA");
     }
 }
